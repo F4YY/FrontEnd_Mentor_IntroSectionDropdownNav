@@ -18,7 +18,7 @@ export const Container = styled.div`
         font-weight: var(--bold);
         color:var(--Almost-Black);
         text-align: left;
-        padding: 30px 40px 0 50px;
+        padding: 30px 110px 0 50px;
         @media screen and (max-width:1025px) {
             font-size: 2em;
             padding: 30px 20px 0 30px;
