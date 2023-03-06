@@ -47,27 +47,6 @@ export const Container = styled.div`
             text-align: center;
         }
     }
-    ul{
-        font-size: .82em;
-        color:var(--Medium-Gray);
-        list-style: none;
-        @media screen and (max-width:1025px) {
-            font-size: .7em;
-            padding:0;
-        }
-        @media screen and (max-width:600px) {
-            display: none;
-        }
-    }
-    ul li{
-        display: inline-block;
-        cursor: pointer;
-        margin-right: 30px;
-        :hover{
-            font-weight: var(--bold);
-            color:var(--Almost-Black);
-        }
-    }
     li#log{
         margin-right: 30px;
     }

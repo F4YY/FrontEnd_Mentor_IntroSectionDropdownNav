@@ -51,6 +51,28 @@ export const Stylednavbar = styled(Hstack)`
     align-items: center;
     justify-content: space-between;
     padding: 0 10px;
+    ul{
+    display:block;
+    font-size: .82em;
+    color:var(--Medium-Gray);
+    list-style: none;
+    @media screen and (max-width:1025px) {
+        font-size: .7em;
+        padding:0;
+    }
+    @media screen and (max-width:600px) {
+        display: none;
+    }
+}
+ul li{
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 30px;
+    :hover{
+        font-weight: var(--bold);
+        color:var(--Almost-Black);
+    }
+}
 `
 export const Logo = styled.img`
     width: 85px;
@@ -98,7 +120,7 @@ export const Styledfeaturelist = styled.div`
     }
     @media screen and (max-width:600px) {
         position:initial;
-        width:auto;
+        width: auto;
         box-shadow: initial;
         translate: 40px -10px;
     }
@@ -264,7 +286,7 @@ export const Menulist = styled(Vstack)`
     z-index:1;
     @media screen and (max-width:600px) {
         ul{
-            display: block;
+            display:block;
             font-size: 1em;
             font-weight: var(--reguler);
             color:var(--Medium-Gray);
