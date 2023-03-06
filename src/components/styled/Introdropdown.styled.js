@@ -13,14 +13,6 @@ export const Hstack = styled.div`
     align-items: center;
     position: relative;
 `
-export const Hstackclient = styled(Hstack)`
-    justify-content: space-evenly;
-    align-items:center;
-    padding: 20px 90px 0;
-    @media screen and (max-width:600px) {
-        padding:0;
-    }
-`
 export const StyledIntrodropdownnav = styled.nav`
     display: grid;
     height: 120vh;
@@ -31,26 +23,26 @@ export const StyledIntrodropdownnav = styled.nav`
         'Hero Heroimg'
         'Client Heroimg'
         'Footer Footer';
-    grid-gap: .8rem;
+    grid-gap: 0;
     @media screen and (max-width:1025px) {
         grid-template-columns: .7fr 1fr;
         grid-template-rows: .2fr 1fr .2fr .2fr;
     }
     @media screen and (max-width:600px) {
         justify-content: center;
-        height: 120vh;
-        grid-template-columns: 0.05fr 3fr 0.05fr;
-        grid-template-rows: .3fr 1fr 1fr .5fr .3fr;
+        min-height: 120vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: .2fr 1fr .8fr .5fr .1fr;
         grid-template-areas:
-            '. Navi .'
-            'Heroimg Heroimg Heroimg'
-            'Hero Hero Hero'
-            'Client Client Client'
-            'Footer Footer Footer';
+            'Navi'
+            'Heroimg'
+            'Hero'
+            'Client'
+            'Footer';
     }
-        grid-gap: 0;
     @media screen and (max-width:376px) {
-        grid-template-rows: .3fr 1.5fr .5fr .5fr .3fr;
+        min-height: 130vh;
+        grid-template-rows: .3fr 1.5fr .5fr .5fr .2fr;
     }
 `
 //Styled for Navbar section:
@@ -58,7 +50,7 @@ export const Stylednavbar = styled(Hstack)`
     grid-area: Navi;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 10px;
 `
 export const Logo = styled.img`
     width: 85px;
@@ -66,6 +58,7 @@ export const Logo = styled.img`
     margin: 0 70px 0 2px;
     @media screen and (max-width:1025px) {
         margin: 0 15px 0 5px;
+        width: 70px;
     }
     @media screen and (max-width:600px) {
         margin: 10px 0 0;
@@ -98,15 +91,16 @@ export const Styledfeaturelist = styled.div`
     box-shadow: 0 10px 20px -2px rgba(0,0,0,0.15);
     position:absolute;
     top: 30px;
-    left: 110px;
+    left: 135px;
     @media screen and (max-width:1025px) {
         top: 30px;
         left: 40px;
     }
     @media screen and (max-width:600px) {
         position:static;
+        width:auto;
         box-shadow: initial;
-        translate: 50px -15px;
+        translate: 40px -10px;
     }
 `
 export const Styledcompanylist = styled.div`
@@ -118,24 +112,25 @@ export const Styledcompanylist = styled.div`
     box-shadow: 0 10px 20px -2px rgba(0,0,0,0.15);
     position:absolute;
     top: 25px;
-    left: 270px;
+    left: 290px;
     @media screen and (max-width:1025px) {
         top: 20px;
         left: 180px;
     }
     @media screen and (max-width:600px) {
-        width: auto;
         position:static;
+        width: auto;
         box-shadow: initial;
-        translate: 40px -15px;
+        translate: 38px -10px;
     }
 `
 export const Wrapper = styled(Hstack)`
     justify-content:left;
     gap:15px;
-    margin:15px 10px 5px;
+    margin:15px 15px 5px;
     cursor: pointer;
     p {
+        margin: 0 ;
         :hover{
             color:var(--Almost-Black);
             font-weight: var(--bold);
@@ -149,7 +144,7 @@ export const Wrapper = styled(Hstack)`
 //Styled for Hero section:
 export const Styledhero = styled(Vstack)`
     grid-area: Hero;
-    padding: 80px;
+    padding: 40px;
     @media screen and (max-width:1025px) {
         padding: 0;
     }
@@ -184,7 +179,7 @@ export const Buttonlearn = styled.button`
     color:var(--Almost-White);
     background-color: var(--Almost-Black);
     padding: 12px 20px;
-    margin: 50px 0 0 50px;
+    margin: 40px 0 0 50px;
     border-radius: 15px;
     cursor:pointer;
     :hover{
@@ -201,7 +196,7 @@ export const Buttonlearn = styled.button`
     @media screen and (max-width:1025px) {
         width: 145px;
         height: 52px;
-        margin: 30px 0 0 30px;
+        margin: 10px 0 20px 30px;
     }
     @media screen and (max-width:600px) {
         width: 145px;
@@ -212,6 +207,9 @@ export const Buttonlearn = styled.button`
 //Styled for Client section:
 export const Styledclient = styled.div`
     grid-area: Client;
+    @media screen and (max-width:1025px) {
+        padding:20px 0 0;
+    }
     @media screen and (max-width:600px) {
         padding:40px 0 0;
     }
@@ -219,6 +217,14 @@ export const Styledclient = styled.div`
 export const Client = styled.img`
     width: 110px;
     height: 20px;
+`
+export const Hstackclient = styled(Hstack)`
+    justify-content: space-evenly;
+    align-items:center;
+    padding: 0 90px 0;
+    @media screen and (max-width:600px) {
+        padding:0;
+    }
 `
 //Styled for Footer section:
 export const FooterAttribution = styled.footer`

@@ -8,10 +8,6 @@ export const Container = styled.div`
     font-family: 'Epilogue';
     --reguler: 500;
     --bold: 700;
-    *{
-        margin:0;
-        padding: 0;
-    }
     display:flex;
     flex-direction: column;
     min-height: 100vh;
@@ -22,14 +18,15 @@ export const Container = styled.div`
         font-weight: var(--bold);
         color:var(--Almost-Black);
         text-align: left;
-        padding: 50px 20px 0 50px;
+        padding: 30px 40px 0 50px;
         @media screen and (max-width:1025px) {
             font-size: 2em;
             padding: 30px 20px 0 30px;
         }
         @media screen and (max-width:600px) {
             font-size: 2em;
-            padding: 40px 0;
+            padding: 20px 0;
+            margin: 0;
             text-align: center;
         }
     }
@@ -39,7 +36,7 @@ export const Container = styled.div`
         color:var(--Medium-Gray);
         text-align: left;
         line-height: 1.5em;
-        padding: 50px 50px 0 50px;
+        padding: 0 120px 0 50px;
         @media screen and (max-width:1025px) {
             font-size: .8em;
             padding: 30px 50px 0 30px;
@@ -56,6 +53,7 @@ export const Container = styled.div`
         list-style: none;
         @media screen and (max-width:1025px) {
             font-size: .7em;
+            padding:0;
         }
         @media screen and (max-width:600px) {
             display: none;
@@ -71,7 +69,7 @@ export const Container = styled.div`
         }
     }
     li#log{
-        margin-right: 40px;
+        margin-right: 30px;
     }
     li#reg{
            padding: 12px 20px;
