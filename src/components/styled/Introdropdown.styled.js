@@ -97,7 +97,7 @@ export const Styledfeaturelist = styled.div`
         left: 40px;
     }
     @media screen and (max-width:600px) {
-        position:static;
+        position:initial;
         width:auto;
         box-shadow: initial;
         translate: 40px -10px;
@@ -118,7 +118,7 @@ export const Styledcompanylist = styled.div`
         left: 180px;
     }
     @media screen and (max-width:600px) {
-        position:static;
+        position:initial;
         width: auto;
         box-shadow: initial;
         translate: 38px -10px;
@@ -250,6 +250,7 @@ export const Overlayscreen = styled.div`
     height:100vh;
     opacity:.5;
     background:var(--Almost-Black);
+    z-index:0;
 `
 export const Menulist = styled(Vstack)`
     position: fixed;
@@ -260,10 +261,10 @@ export const Menulist = styled(Vstack)`
     min-height: 100vh;
     transition: .5s ease-in-out;
     background:var(--Almost-White);
-    z-index: 1;
+    z-index:1;
     @media screen and (max-width:600px) {
         ul{
-            display: initial;
+            display: block;
             font-size: 1em;
             font-weight: var(--reguler);
             color:var(--Medium-Gray);
