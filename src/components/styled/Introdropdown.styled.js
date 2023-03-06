@@ -25,8 +25,8 @@ export const StyledIntrodropdownnav = styled.nav`
         'Footer Footer';
     grid-gap: 0;
     @media screen and (max-width:1025px) {
-        grid-template-columns: .7fr 1fr;
-        grid-template-rows: .2fr 1fr .2fr .2fr;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 10% 70% 10% 10%;
     }
     @media screen and (max-width:600px) {
         justify-content: center;
@@ -73,6 +73,21 @@ ul li{
         color:var(--Almost-Black);
     }
 }
+li#log{
+        margin-right: 30px;
+    }
+li#reg{
+        padding: 12px 20px;
+        border: .13em solid var(--Medium-Gray);
+        border-radius: 12px;
+        :hover{
+            border: .15em solid var(--Almost-Black);
+        }
+        :active{
+            color: var(--Medium-Gray);
+            border: .15em solid var(--Medium-Gray);
+        }
+    }
 `
 export const Logo = styled.img`
     width: 85px;
@@ -297,7 +312,7 @@ export const Menulist = styled(Vstack)`
             margin: 0 0 30px 30px ;
         }
         ul#logreg{
-            margin-top: 20px;
+            margin-top: 20px 30px;
         }
         li#log{
             font-size: .85em;

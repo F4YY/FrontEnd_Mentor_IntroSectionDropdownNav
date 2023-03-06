@@ -22,6 +22,7 @@ export const Container = styled.div`
         @media screen and (max-width:1025px) {
             font-size: 2em;
             padding: 30px 20px 0 30px;
+            margin:0;
         }
         @media screen and (max-width:600px) {
             font-size: 2em;
@@ -47,22 +48,6 @@ export const Container = styled.div`
             text-align: center;
         }
     }
-    li#log{
-        margin-right: 30px;
-    }
-    li#reg{
-           padding: 12px 20px;
-           border: .13em solid var(--Medium-Gray);
-           margin:0 auto;
-           border-radius: 12px;
-           :hover{
-                border: .15em solid var(--Almost-Black);
-           }
-            :active{
-                color: var(--Medium-Gray);
-                border: .15em solid var(--Medium-Gray);
-            }
-        }
     .rotate{
         transform: rotateZ(180deg);
         transition: 0.3s ease-in-out;
