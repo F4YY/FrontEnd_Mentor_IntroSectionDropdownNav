@@ -141,7 +141,7 @@ export const Styledfeaturelist = styled.div`
     }
 `
 export const Styledcompanylist = styled.div`
-    width: 95px;
+    width: auto;
     height: auto;
     margin:10px 10px;
     border-radius: 10px;
@@ -304,6 +304,7 @@ export const Menulist = styled(Vstack)`
     min-height: 100vh;
     transition: .5s ease-in-out;
     background:var(--Almost-White);
+    overflow:hidden;
     z-index:1;
     @media screen and (max-width:600px) {
         ul{
