@@ -20,10 +20,12 @@ export const Navbar = () => {
     const [showFeature, setShowfeature] = React.useState(false);
     const featureHandler = () => {
         setShowfeature(!showFeature)
+        setShowcompany(false)
     };
     const [showCompany, setShowcompany] = React.useState(false);
     const companyHandler = () => {
         setShowcompany(!showCompany)
+        setShowfeature(false)
     };
     const [toggleMenu, setToggleMenu] = React.useState(false);
 

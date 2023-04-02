@@ -284,6 +284,9 @@ export const Overlayscreen = styled.div`
     top:0;
     left:0;
     width:100%;
+    animation: overlayslide .3s ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
     height:100vh;
     opacity:.5;
     background:var(--Almost-Black);
@@ -295,6 +298,9 @@ export const Menulist = styled(Vstack)`
     top:0;
     right:0;
     width: 70%;
+    animation: slidernav .5s ease-in;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
     min-height: 100vh;
     transition: .5s ease-in-out;
     background:var(--Almost-White);
